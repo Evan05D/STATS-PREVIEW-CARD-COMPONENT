@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+/*Primary*/
+--veryDarkBlue: hsl(233, 47%, 7%);
+--darkDesaturatedBlue: hsl(244, 38%, 16%);
+--softViolet: hsl(277, 64%, 61%);
+/*Neutral*/
+--white: hsl(0, 0%, 100%);
+--slightlyTransparentWhiteOne: hsla(0, 0%, 100%, 0.75);
+--slightlyTransparentWhiteTwo: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--veryDarkBlue);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-container {
+  width: 300px;
+  height:  700px;
+  background-color: var(--darkDesaturatedBlue);
+  border-radius: 10px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+#main-container .img-container .img {
+  background-image: url(./images/image-header-mobile.jpg);
+  background-size: contain;
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+
+#main-container .img-container .img-color {
+  background-color: rgba(76, 12, 116, 0.6);
+  background-size: contain;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+
+#main-container h1 {
+  font-size: 1.5em;
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  margin: 35px 30px 15px 30px;
+}
+
+#main-container h1 b {
+  color: var(--softViolet);
+}
+
+#main-container .paragraph-content {
+  color: var(--slightlyTransparentWhiteTwo);
+  margin: 0 30px 30px 30px;
+  font-family:  'Inter', sans-serif;
+  font-size: 0.83em;
+  line-height: 1.7em;
+
+}
+
+#main-container .contain-ctq {
+  margin: 0 0 22px 0;
+  line-height: 1.4em;
+}
+
+.contain-ctq strong {
+  font-family: 'Inter', sans-serif;
+  color: var(--white);
+  font-size: 1.2em;
+}
+
+.contain-ctq p{
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--slightlyTransparentWhiteTwo);
+  font-size: 0.7em;
+  font-weight: 400;
+}
+
+.attribution { 
+  font-size: 14px; 
+  text-align: center; 
+  color: var(--slightlyTransparentWhiteOne);
+}
+.attribution a { 
+  color: var(--softViolet);
+}
